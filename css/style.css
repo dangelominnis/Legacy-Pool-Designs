@@ -888,6 +888,79 @@ right: 20%;
   transition: all 0.2s;
 } */
 
+/* Financing */
+.financing {
+  display: flex;
+  position: relative;
+  padding: 4rem 0;
+  background-image: var(--bg-gradient-primary);
+}
+
+.financing h2 {
+  color: var(--color-white);
+  font-size: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.financing h4 {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin: 2rem 0;
+}
+
+.financing p {
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--color-white);
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+
+.financing a {
+  color: var(--color-white);
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.financing a:hover {
+  transform: translateY(-0.5rem);
+  color: var(--color-grey-light-1);
+  /* background: var(--color-primary); */
+}
+
+.financing .btn--primary {
+  display: flex;
+  position: relative;
+  text-align: center;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  padding: 1.5rem 4rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.financing .btn--primary:hover {
+  transform: translateY(-0.5rem);
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+
 /* Testimonials */
 .section-testimonials {
   display: flex;

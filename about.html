@@ -1,344 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legacy Pools</title>
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Font -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">     -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Legacy Pool Designs is a pool company that specializes in custom pools in League City, and surrounding areas.">
+    <meta name="keywords" content="Swimming Pool, Hot Tub Service, League City, Texas, Decks, Patio Builder, Pool Renovations">
+    <meta name="author" content="Legacy Pool Designs">
+    <meta http-equiv="refresh" content="30">
+    <title>Legacy Pool Designs</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/b1974bca5b.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Section Header -->
-    <section class="banner">
-      <div class="logo-box">
-        <img src="./img/logo_large.png" alt="logo" />
-        <a href="tel:8325468080">832-546-8080</a>
-      </div>
-      <div class="navigation">
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="index.html" class="navigation__link">Home</a>
-            </li>
-            <li class="navigation__item">
-              <a href="services.html" class="navigation__link">Services</a>
-            </li>
-            <li class="navigation__item">
-              <a href="gallery.html" class="navigation__link">Gallery</a>
-            </li>
-            <li class="navigation__item">
-              <a href="construction.html" class="navigation__link">Construction</a>
-            </li>
-            <li class="navigation__item">
-              <a href="about.html" class="navigation__link">About</a>
-            </li>
-            <li class="navigation__item">
-              <a href="contact.html" class="navigation__link">Contact</a>
-            </li>
-          </ul>
-          <div class="hamburger" id="toggle">
-            <div class="hamburger-bars">
-              <i class="fas fa-bars fa-3x"></i>
+    <!-- Header Section -->
+    <!-- <header class="header">
+        <div class="container">
+            <div class="header-box">
+                <h4>Creating A Legacy</h4>
+                <h1>Professional Pool Designs</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint pariatur, provident alias quo saepe!</p>
+                <button class="btn-primary">Explore Now</button>
             </div>
-          </div>
-        </nav>
-      </div>
-    </section>
+        </div>
+    </header> -->
+    <!-- Bar -->
+    <div class="bar bar--bg">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/legacy_pool_logo.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">list</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="services.html">Services</a>
+                <a class="nav__link" href="gallery.html">Gallery</a>
+                <a class="nav__link" href="about.html">About</a>
+                <a href="tel:832-546-8080" class="btn-primary">Call Now</a>
+            </nav>
+        </div>
+    </div>
 
-     <!-- Navigation Mobile -->
-     <nav class="nav__mobile" id="nav__mobile">
-      <div
-        class="nav__mobile-ul u-padding-top--2 u-padding-bottom--2"
-        id="nav__mobile-ul">
-        <ul>
-          <li class="nav__mobile-ul-li"><a href="index.html">Home</a>
-          </li>
-          <li class="nav__ul-li">
-            <a href="services.html">Services</a>
-          </li>
-          <li class="nav__ul-li">
-            <a href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav__ul-li">
-            <a href="construction.html ">Construction</a>
-          </li>
-          <li class="nav__ul-li">
-              <a href="about.html">About</a>
-          </li>
-          <li class="nav__ul-li">
-            <a href="contact.html">Contact</a>
-          </li>
- 
-        </ul>
-      </div>
-    </nav>
-    
-        <!-- About 1 -->
-        <section class="about">
-          <div class="container">
-            <div class="about__item">
-              <div class="about__item-item">
-                <div class="about__item-img--1"></div>
-                <div class="about__item-textbox--1">
-                  <h2>
-                    About Us
-                  </h2>
-                  <p>
-                    Legacy Pool Designs is a family owned and operated business
-                    that specializes in high quality custom pools in League City, TX.
-                    Owners, Stephen and Suzanne Scalise, have been providing exceptional
-                    customer service and custom-built pools and spas for nearly a
-                    decade. Our goal is to continue to reach new heights in the pool
-                    industry while always keeping our clients the main priority.
-                  </p>
-                  <a href="contact.html" class="btn btn--primary">Contact Now</a>
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1.5)
+            }, {
+                threshold: 0.9
+            });
+            
+            observer.observe(document.querySelector(".header"));
+        });
+        </script>
+
+        <!-- Feature Section -->
+        <section class="feature padding-top-4">
+            <div class="container">
+                <div class="feature-box">
+                    <div class="feature-image">
+                        <img src="img/pool8.jpg" alt="pool image">
+                    </div>
+                    <div class="feature-text">
+                        <h4>Who We Are</h4>
+                        <h2>About Us</h2>
+                        <p>Legacy Pool Designs is a family owned and operated business, specializing in high quality custom pools in surrounding areas and League City, TX. Owners, Stephen and Suzanne Scalise, have been providing exceptional customer service and custom-built pools and spas for nearly a decade. Our core belief is to treat every project as if it was our own, which demonstrates our company's commitment to quality and professionalism.</p>
+                        <!-- <p>Our goal is to continue to reach new heights in the pool industry while always keeping our clients the main priority.</p> -->
+                        <div class="feature-button-box">
+                            <a href="#" class="btn-primary">Contact Us</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </section>
 
-    <!-- About 2 -->
-    <section class="about-2">
-      <div class="container">
-        <div class="about-2__item">
-          <div class="about-2__item-item">
-            <div class="about-2__item-img--1"></div>
-            <div class="about-2__item-textbox--1">
-              <h2>
-                Our Mission
-              </h2>
-              <p>
-                Here at Legacy Pool Designs, we are the next generation pool builder.
-                We strive to stay on the cutting edge of technology for “greener,” more
-                efficient pools, while providing you the latest design innovations.
-                We provide each client with a custom 3D virtual reality design.
-              </p>
-              <a href="contact.html" class="btn btn--primary">Contact Now</a>
+      <!-- Feature 2 Section -->
+      <section class="feature-2">
+          <div class="container">
+              <div class="feature-box-2">
+                  <div class="feature-image">
+                      <img src="img/pool8.jpg" alt="pool image">
+                  </div>
+                  <div class="feature-text">
+                      <h4>Who We Are</h4>
+                      <h2>Our Mission</h2>
+                      <p>Here at Legacy Pool Designs, we are the next generation pool builder. We strive to stay on the cutting edge of technology for greener, more efficient pools, while providing you the latest design innovations. We provide each client with a custom 3D virtual reality design.</p>
+                      <div class="feature-button-box">
+                          <a href="#" class="btn-primary">Contact Us</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Financing Section -->
+      <section class="financing">
+          <div class="container">
+              <h4>Looking For Pool Financing?</h4>
+              <h2>Financing & Payments</h2>
+              <p>Looking for pool financing? There are many lenders that would be of great assistance when planning to finance your pool. Here are some suggested lenders:</p>
+              <div class="financing-box">
+                  <div class="financing-item">
+                    <a href="https://www.cbhou.com/Pool-Loans/Home"><img src="img/central-bank.jpg" alt="image"></a>
+                  </div>
+                  <div class="financing-item">
+                    <a href="https://www.lyonfinancial.net/"><img src="img/lyon.png" alt="image"></a>
+                  </div>
+                  <div class="financing-item">
+                    <a href="https://www.hfsfinancial.net/"><img src="img/hfs-logo-new.png" alt="image"></a>
+                  </div>
+                  <div class="financing-item">
+                    <a href="https://poolloan.net/"><img src="img/Viking-Logo-Horizontal.png" alt="image"></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h4>Testimonials</h4>
+                <h2>What Do People <span>Say</span></h2>
+                <div class="testimonials-box">
+                    <div class="testimonials-card">
+                        <h3>"Friendly & Helpful"</h3>
+                        <p>From the moment we met with our salesman to swimming in our new pool, it was a pleasure. Everyone we came in contact with was friendly and helpful. This made us feel comfortable and my husband and I knew we had made the right choice. Thank you!</p>
+                        <h4>~ Hailey P.</h4>
+                    </div>
+                    <div class="testimonials-card">
+                      <h3>"Just WOW"</h3>
+                      <p>We love our pool. When my friends and family come over their reaction is “Wow”! I would definitely recommend them. Legacy Pool Designs has a great computer program that lets you see your pool. It’s state of the art and made it an easy choice.</p>
+                      <h4>~ Paul F.</h4>
+                    </div>
+                    <div class="testimonials-card">
+                      <h3>"Absolutely Fantastic"</h3>
+                      <p>Stephen  was wonderful to work with ! He was very patient and explained every detail along the process. I would absolutely recommend him to any of my friends! </p>
+                      <h4>~ Nada Trout</h4>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-  
-<!-- Financing -->
-<section class="financing">
-  <div class="container">
-    <h2>
-      Financing
-    </h2>
-    <div class="underline-1"></div>
-    <h4>
-      Looking for pool financing? There are many lenders that would be of great assistance when planning to finance your pool.
-      Here are some suggested lenders:
-    </h4>
-    <p>
-      <a href="https://www.cbhou.com/PoolLoans">◦ Central Bank, </a> <br>
-      <a href="https://www.hfsfinancial.net/">◦ HFS Financial </a> <br>
-      <a href="https://www.lyonfinancial.net/">◦ Lyon Financial</a> <br>
-      <a href="https://www.poolloan.net/">◦ Viking Capital</a> <br>
-    </p>
-  </div>
-</section>
-
-
-    <!-- Testimonials -->
-   <section class="section-testimonials" id="Testimonials">
-    <div class="container">
-      <h2>
-        Testimonials
-      </h2>
-      <div class="underline-1"></div>
-      <div class="u-section-underline-p-2"></div>
-      <div class="testimonials">
-        <div class="testimonials__item">
-          <i class="fas fa-quote-left fa-3x"></i>
-          <div class="testimonials__text">
-            <p>
-              From the moment we met with our salesman to swimming in
-              our new pool, it was a pleasure. Everyone we came in contact
-              with was friendly and helpful. This made us feel comfortable
-              and my husband and I knew we had made the right choice. Thank you!
-            </p>
-          </div>
-          <div class="testimonials__image">
-            <h4 class="testimonials__name u-heading-lin-gradient-3">Hailey P.</h4>
-          </div>       
-        </div>
-      <div class="testimonials">
-        <div class="testimonials__item">
-          <i class="fas fa-quote-left fa-3x"></i>
-          <div class="testimonials__text">
-            <p>
-              We love our pool. When my friends and family come over their
-              reaction is “Wow”! I would definitely recommend them. Legacy
-              Pool Designs has a great computer program that lets you see
-              your pool. It’s state of the art and made it an easy choice.
-          </p>
-          </div>
-          <div class="testimonials__image">
-            <h4 class="testimonials__name u-heading-lin-gradient-3">Paul F.</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-
-<!-- Contact section -->
-<section id="Contact" class="section-contact">
-  <div class="container">
-    <h2 class="heading-secondary u-heading-lin-gradient-2">
-      Contact Us
-    </h2>
-    <div class="underline-1"></div>
-    <div class="contact__cards">
-      <div class="contact__cards-card">
-        <i class="fas fa-phone-alt fa-4x"></i>
-        <!-- <div class="contact__cards-card-text"> -->
-        <h3>
-          Phone
-        </h3>
-        <p>
-          (832)-546-8080
-        </p>
-        <!-- </div> -->
-      </div>
-      <div class="contact__cards-card">
-        <i class="fas fa-envelope fa-4x"></i>
-        <!-- <div class="contact__cards-card-text"> -->
-        <h3>
-          Email
-        </h3>
-        <p>
-          LegacyPoolDesigns <br>@gmail.com
-        </p>
-        <!-- </div> -->
-      </div>
-      <div class="contact__cards-card">
-        <i class="fas fa-clock fa-3x"></i>
-        <!-- <div class="contact__cards-card-text"> -->
-        <h3>
-          Hours
-        </h3>
-        <p>
-          8:00am - 5:00pm
-        </p>
-        <!-- </div> -->
-      </div>
-    </div>
-    <form name="contact" netlify></form>
-    <!-- <form name='contact' method='POST' data-netlify-recaptcha='true'><input type='hidden' name='form-name' value='contact' /> -->
-      <div class="contact__form-grp">
-        <div class="contact__form-grp-item">
-          <label for="fullName">NAME</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Full Name"
-          />
-        </div>
-        <div class="contact__form-grp-item">
-          <label for="email">EMAIL</label>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />
-        </div>
-        <div class="contact__form-grp-msg">
-          <label for="message">MESSAGE</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Enter Message"
-          ></textarea>
-        </div>
-        <div class='recap'><script src='../www.google.com/recaptcha/api.js'></script>
-<div class='g-recaptcha' data-sitekey='6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'></div>
-<noscript>
-<div>
-<div style="width: 302px; height: 422px; position: relative;">
-<div style="width: 302px; height: 422px; position: absolute;">
-<iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" frameborder="0" scrolling="no"
-style="width: 302px; height:422px; border-style: none;">
-</iframe>
-</div>
-</div>
-<div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
-<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
-style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" >
-</textarea>
-</div>
-</div>
-</noscript>
-</div>
-        <input
-          type="submit"
-          value="SEND MESSAGE"
-        />
-      </div>
-    </form>
-  </div>
-</section>
-</main>
-
-    <!-- Footer -->
-    <section class="footer__main">
-      <footer>
+       <!-- Banner Section -->
+       <section class="banner">
         <div class="container">
-          <h3>Follow Us On</h3>
-          <div class="footer__main-socials">
-            <a
-              href="#"
-              target="_blank"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              href="#"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="#"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </div>
-          <div class="footer__main-copyrt">
-            <p>
-              Copyright &copy; 2020. All Rights Reserved by Legacy Pool Designs.
-            </p>
-            <a
-              href="#"
-              target="_blank"
-              class="terms-conditions"
-              >Terms & Conditions</a
-            >
-            <a
-              href="https://www.logo-genius.com"
-              target="_blank"
-              class="terms-conditions"
-              >Developed By Logo Genius</a
-            >
-            <!-- <a href="#">Site Map</a> -->
-          </div>
+            <div class="banner-box">
+                <div class="banner-text">
+                    <h3>Get Started Today</h3>
+                    <p>Owners, Stephen and Suzanne Scalise, provide exceptional customer service and unparalleled value! Call 281-235-3120 to get started today!</p>
+                </div>
+                <div class="banner-button">
+                    <a href="tel:281-235-3120" class="btn-primary">Get Started</a>
+                </div>
+            </div>
         </div>
-      </footer>
     </section>
-    <script src="./js/main.js"></script>
-  </body>
-  </html>
+
+<!-- Contact Section -->
+<section class="contact" id="Contact">
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h4>Schedule An Appointment With Us!</h4>
+                <h2>Contact Our Team</h2>
+                <p>Whether you need a new pool, pool renovations, or have any inquires regarding the addition of a pool, the Legacy Pool team is here to help you out! Fill out the form below with your information so we can get back to you right away!</p>
+            </div>
+            <div class="contact-box">
+                <form action="">
+                    <div class="contact-box1">
+                        <div class="contact-box1-item">
+                            <h5>First Name*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box2">
+                        <div class="contact-box2-item">
+                            <h5>Phone Number*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                        <div class="contact-box2-item">
+                            <h5>Email*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box3">
+                        <div class="contact-box3-item">
+                            <h5>Message*</h5>
+                            <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div class="contact-box-submit">
+                        <div class="contact-button">
+                            <a href="#" class="btn-primary">Submit</a>
+                        </div>
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer" id="Footer">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-box-company">
+                <img src="img/legacy_pool_logo.png" alt="">
+                <p>Legacy Pool Designs is an Aggie family owned and operated business that specializes in custom pools in League City, and surrounding areas. Owners, Stephen and Suzanne Scalise, provide exceptional customer service and unparalleled value!</p>
+                <p>Copyright © 2021 Legacy Pool Designs - All rights reserved.</p>
+            </div>
+            <div class="footer-box-links">
+                <h3>Site Map</h3>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="services.html"><li>Services</li></a>
+                    <a href="gallery.html"><li>Gallery</li></a>
+                    <a href="about.html"><li>About</li></a>
+                </ul>
+            </div>
+            <div class="footer-box-socials">
+                <h3>Social Media</h3>
+                <!-- <a href="#"><li><i class="fab fa-instagram"></i></li></a> -->
+                <a href="https://www.facebook.com/LegacyPoolDesigns/"><li><i class="fab fa-facebook-f"></i></li></a>
+                <!-- <a href="#"><li><i class="fab fa-twitter"></i></li></a> -->
+            </div>
+            <div class="footer-box-development">
+                <h3>Contact Info</h3>
+                <a href="tel:832-546-8080"><li>(832) 546 - 8080</li></a>
+                <a href="mailto:legacypooldesigns@gmail.com"><li>legacypooldesigns@gmail.com</li></a>
+                <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+</body>
+</html>

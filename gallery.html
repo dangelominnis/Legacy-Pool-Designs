@@ -1,321 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legacy Pools</title>
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Font -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">     -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Legacy Pool Designs is a pool company that specializes in custom pools in League City, and surrounding areas.">
+    <meta name="keywords" content="Swimming Pool, Hot Tub Service, League City, Texas, Decks, Patio Builder, Pool Renovations">
+    <meta name="author" content="Legacy Pool Designs">
+    <meta http-equiv="refresh" content="30">
+    <title>Legacy Pool Designs</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/b1974bca5b.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Section Header -->
-    <section class="banner">
-      <div class="logo-box">
-        <img src="./img/logo_large.png" alt="logo" />
-        <a href="tel:8325468080">832-546-8080</a>
-      </div>
-      <div class="navigation">
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="index.html" class="navigation__link">Home</a>
-            </li>
-            <li class="navigation__item">
-              <a href="services.html" class="navigation__link">Services</a>
-            </li>
-            <li class="navigation__item">
-              <a href="gallery.html" class="navigation__link">Gallery</a>
-            </li>
-            <li class="navigation__item">
-              <a href="construction.html" class="navigation__link"
-                >Construction</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="about.html" class="navigation__link">About</a>
-            </li>
-            <li class="navigation__item">
-              <a href="contact.html" class="navigation__link">Contact</a>
-            </li>
-          </ul>
-          <div class="hamburger" id="toggle">
-            <div class="hamburger-bars">
-              <i class="fas fa-bars fa-3x"></i>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </section>
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-     <!-- Navigation Mobile -->
-     <nav class="nav__mobile" id="nav__mobile">
-      <div
-        class="nav__mobile-ul u-padding-top--2 u-padding-bottom--2"
-        id="nav__mobile-ul">
-        <ul>
-          <li class="nav__mobile-ul-li"><a href="index.html">Home</a>
-          </li>
-          <li class="nav__ul-li">
-            <a href="services.html">Services</a>
-          </li>
-          <li class="nav__ul-li">
-            <a href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav__ul-li">
-            <a href="construction.html ">Construction</a>
-          </li>
-          <li class="nav__ul-li">
-              <a href="about.html">About</a>
-          </li>
-          <li class="nav__ul-li">
-            <a href="contact.html">Contact</a>
-          </li>
- 
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Slider -->
-    <section class="section-slider">
-      <div class="container">
-      <!-- <div class="container"> -->
-        <h2>Gallery</h2>
-        <div class="underline-1"></div>
-      <!-- </div> -->
-      <div class="slideshow-container">
-
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="img/pool14.jpg" style="width:100%">
-          <!-- <div class="text">Caption Text</div> -->
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="img/pool2.jpg" style="width:100%">
-          <!-- <div class="text">Caption Two</div> -->
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="img/pool13.jpg" style="width:100%">
-          <!-- <div class="text">Caption Three</div> -->
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-      <!-- <div class="w3-content w3-display-container" style="max-width: 1200px">
-        <img class="mySlides" src="img/pool1.jpg" style="width: 75%" />
-        <img class="mySlides" src="img/pool2.jpg" style="width: 75%" />
-        <img class="mySlides" src="img/pool4.jpg" style="width: 75%" />
-        <img class="mySlides" src="img/pool5.jpg" style="width: 75%" />
-        <div
-          class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
-          style="width: 100%"
-        >
-          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">
-            &#10094;
-          </div>
-          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">
-            &#10095;
-          </div>
-          <span
-            class="w3-badge demo w3-border w3-transparent w3-hover-white"
-            onclick="currentDiv(1)"
-          ></span>
-          <span
-            class="w3-badge demo w3-border w3-transparent w3-hover-white"
-            onclick="currentDiv(2)"
-          ></span>
-          <span
-            class="w3-badge demo w3-border w3-transparent w3-hover-white"
-            onclick="currentDiv(3)"
-          ></span>
-        </div> -->
-      </div>
-    </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="gallery">
-      <div class="container">
-        <h2>Explore Our Work</h2>
-        <div class="underline-1"></div>
-        <!-- <h4>
-          Browse all of our unique projects and get inspired for your dream backyard.
-        </h4> -->
-        <div class="gallery__img-gallery">
-          <div class="gallery__img-item">
-            <div class="gallery__img-box">
-              <img src="img/pool5.jpg" alt="pool image" />
-              <!-- <div class="gallery__img-box-text">
-                <h3>Services</h3>
-                <a href="#" class="btn btn--secondary"> Book Now </a>
-              </div> -->
-            </div>
-          </div>
-          <div class="gallery__img-item">
-            <div class="gallery__img-box">
-              <img src="img/pool15.jpg" alt="pool image" />
-              <!-- <div class="gallery__img-box-text">
-                <h3>Gallery</h3>
-                <a href="#" class="btn btn--secondary"> Book Now </a>
-              </div> -->
-            </div>
-          </div>
-          <div class="gallery__img-item">
-            <div class="gallery__img-box">
-              <img src="img/pool16.jpg" alt="pool image" />
-              <!-- <div class="gallery__img-box-text">
-                <h3>Construction</h3>
-                <a href="#" class="btn btn--secondary"> Book Now </a> -->
-            </div>
-          </div>
-          <div class="gallery__img-item">
-            <div class="gallery__img-box">
-              <img src="img/pool17.jpg" alt="pool image" />
-              <!-- <div class="gallery__img-box-text">
-                <h3>About</h3>
-                <a href="#" class="btn btn--secondary"> Book Now </a>
-              </div> -->
-            </div>
-          </div>
-          <div class="gallery__img-item">
-            <div class="gallery__img-box">
-              <img src="img/patio2.jpg" alt="pool image" />
-              <!-- <div class="gallery__img-box-text">
-                <h3>About</h3>
-                <a href="#" class="btn btn--secondary"> Book Now </a>
-              </div> -->
-            </div>
-          </div>
-          <div class="gallery__img-item">
-            <div class="gallery__img-box">
-              <img src="img/pool11.jpg" alt="pool image" />
-              <!-- <div class="gallery__img-box-text">
-                <h3>About</h3>
-                <a href="#" class="btn btn--secondary"> Book Now </a>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <section class="footer__main">
-      <footer>
+    <!-- Header Section -->
+    <!-- <header class="header">
         <div class="container">
-          <h3>Follow Us On</h3>
-          <div class="footer__main-socials">
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-          </div>
-          <div class="footer__main-copyrt">
-            <p>
-              Copyright &copy; 2020. All Rights Reserved by Legacy Pool Designs.
-            </p>
-            <a href="#" target="_blank" class="terms-conditions"
-              >Terms & Conditions</a
-            >
-            <a
-              href="https://www.logo-genius.com"
-              target="_blank"
-              class="terms-conditions"
-              >Developed By Logo Genius</a
-            >
-            <!-- <a href="#">Site Map</a> -->
-          </div>
+            <div class="header-box">
+                <h4>Creating A Legacy</h4>
+                <h1>Professional Pool Designs</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint pariatur, provident alias quo saepe!</p>
+                <button class="btn-primary">Explore Now</button>
+            </div>
         </div>
-      </footer>
-    </section>
+    </header> -->
+    <!-- Bar -->
+    <div class="bar bar--bg">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/legacy_pool_logo.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">list</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="services.html">Services</a>
+                <a class="nav__link" href="gallery.html">Gallery</a>
+                <a class="nav__link" href="about.html">About</a>
+                <a href="tel:832-546-8080" class="btn-primary">Call Now</a>
+            </nav>
+        </div>
+    </div>
 
-    <!-- JQuery CDN For SLIDER-->
-    <!-- <script
-      src="../code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-
+    <!-- Header Javascript -->
     <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1.5)
+            }, {
+                threshold: 0.9
+            });
+            
+            observer.observe(document.querySelector(".header"));
+        });
+        </script>
 
-      function plusDivs(n) {
-        showDivs((slideIndex += n));
-      }
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="container">
+                <h4>Explore Our Gallery</h4>
+                <h2>Pools & Projects</h2>
+                <p>Explore some of our latest projects and work done around our local community!</p>
+                <div class="gallery-box">
+                  <div class="gallery-item">
+                    <img src="img/pool1.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool16.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool3.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool4.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool15.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool6.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool7.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool14.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool9.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool10.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool11.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool12.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool5.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool13.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/pool14.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/patio1.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/patio2.jpg" alt="">
+                  </div>
+                  <div class="gallery-item">
+                    <img src="img/fire_pit.jpg" alt="">
+                  </div>
+                </div>
+            </div>
+        </section>
 
-      function currentDiv(n) {
-        showDivs((slideIndex = n));
-      }
 
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = x.length;
-        }
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" w3-white", "");
-        }
-        x[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " w3-white";
-      }
-    </script> -->
+        <!-- Banner Section -->
+        <section class="banner">
+            <div class="container">
+                <div class="banner-box">
+                    <div class="banner-text">
+                        <h3>Get Started Today</h3>
+                        <p>Owners, Stephen and Suzanne Scalise, provide exceptional customer service and unparalleled value! Call 281-235-3120 to get started today!</p>
+                    </div>
+                    <div class="banner-button">
+                        <a href="tel:281-235-3120" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
-      <script src="./js/main.js"></script>
-  </body>
+<!-- Contact Section -->
+<section class="contact" id="Contact">
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h4>Schedule An Appointment With Us!</h4>
+                <h2>Contact Our Team</h2>
+                <p>Whether you need a new pool, pool renovations, or have any inquires regarding the addition of a pool, the Legacy Pool team is here to help you out! Fill out the form below with your information so we can get back to you right away!</p>
+            </div>
+            <div class="contact-box">
+                <form action="">
+                    <div class="contact-box1">
+                        <div class="contact-box1-item">
+                            <h5>First Name*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box2">
+                        <div class="contact-box2-item">
+                            <h5>Phone Number*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                        <div class="contact-box2-item">
+                            <h5>Email*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box3">
+                        <div class="contact-box3-item">
+                            <h5>Message*</h5>
+                            <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div class="contact-box-submit">
+                        <div class="contact-button">
+                            <a href="#" class="btn-primary">Submit</a>
+                        </div>
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer" id="Footer">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-box-company">
+                <img src="img/legacy_pool_logo.png" alt="">
+                <p>Legacy Pool Designs is an Aggie family owned and operated business that specializes in custom pools in League City, and surrounding areas. Owners, Stephen and Suzanne Scalise, provide exceptional customer service and unparalleled value!</p>
+                <p>Copyright © 2021 Legacy Pool Designs - All rights reserved.</p>
+            </div>
+            <div class="footer-box-links">
+                <h3>Site Map</h3>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="services.html"><li>Services</li></a>
+                    <a href="gallery.html"><li>Gallery</li></a>
+                    <a href="about.html"><li>About</li></a>
+                </ul>
+            </div>
+            <div class="footer-box-socials">
+                <h3>Social Media</h3>
+                <!-- <a href="#"><li><i class="fab fa-instagram"></i></li></a> -->
+                <a href="https://www.facebook.com/LegacyPoolDesigns/"><li><i class="fab fa-facebook-f"></i></li></a>
+                <!-- <a href="#"><li><i class="fab fa-twitter"></i></li></a> -->
+            </div>
+            <div class="footer-box-development">
+                <h3>Contact Info</h3>
+                <a href="tel:832-546-8080"><li>(832) 546 - 8080</li></a>
+                <a href="mailto:legacypooldesigns@gmail.com"><li>legacypooldesigns@gmail.com</li></a>
+                <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+</body>
 </html>

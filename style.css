@@ -963,11 +963,11 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    /* margin: 2rem; */
 }
 
 .financing-item img {
-    width: 200px;
+    width: 100%;
     height: auto;
     transition: .3s all;
 }
